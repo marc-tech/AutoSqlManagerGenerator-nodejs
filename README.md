@@ -15,7 +15,7 @@ python 3.6
 
   -Then execute the script like :
 
-      >python AutoSqlManagerGenerator-nodejs TableName
+      > python AutoSqlManagerGenerator-nodejs.py TableName
 
 
 Example :
