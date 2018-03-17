@@ -29,8 +29,9 @@ Example :
 
 ![alt text](https://image.noelshack.com/fichiers/2018/11/6/1521299463-img1.png)
 
+## -Script result
 
-<pre><code>
+```js
 const connection = require('db');
 
 class Messages {
@@ -98,9 +99,4 @@ class Messages {
 }
 
 module.exports = Messages;
-
-</code></pre>
-
-## -Script result
-
-![alt text](https://image.noelshack.com/fichiers/2018/11/6/1521299463-img2.png)
+```
