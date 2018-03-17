@@ -39,7 +39,7 @@ dbfile.write("});\n")
 dbfile.write("\n")
 dbfile.write("module.exports = connection;\n")
 
-file = open(sys.argv[1] + '.js', 'w')
+file = open(className + '.js', 'w')
 file.truncate()
 
 file.write("const connection = require('db');\n")

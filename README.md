@@ -31,6 +31,23 @@ Example :
 
 ## -Script result
 
+-db.js :
+
+```js
+const mysql = require('mysql');
+
+var connection = mysql.createConnection({
+	host     : 'host',
+	user     : 'user',
+	password : 'password',
+	database : 'database'
+});
+
+module.exports = connection;
+```
+
+-Messages.js :
+
 ```js
 const connection = require('db');
 
