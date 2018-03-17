@@ -66,7 +66,7 @@ for r in rows:
 
 file.write("\tstatic Find" + className + "ById (id, cb) {\n")
 file.write("\t\tconnection.query('SELECT * FROM " + sys.argv[1] + " WHERE id = ?', [id], function(err, result) {\n")
-file.write("\t\t\tcb(error, result.map((row) => new " + sys.argv[1] + "(row)));\n")
+file.write("\t\t\tcb(err, result.map((row) => new " + sys.argv[1] + "(row)));\n")
 file.write("\t\t})\n")
 file.write("\t}\n")
 file.write("\n")

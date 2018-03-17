@@ -103,7 +103,7 @@ class Messages {
 
 	static FindMessagesById (id, cb) {
 		connection.query('SELECT * FROM messages WHERE id = ?', [id], function(err, result) {
-			cb(error, result.map((row) => new messages(row)));
+			cb(err, result.map((row) => new messages(row)));
 		})
 	}
 
