@@ -1,13 +1,6 @@
-const mysql = require('mysql');
+const connection = require('db');
 
-var connection = mysql.createConnection({
-	host     : 'mysql-fastdj.alwaysdata.net',
-	user     : 'fastdj',
-	password : 'wchuwwaa',
-	database : 'fastdj_db'
-});
-
-class user {
+class User {
 
 	constructor(row) {
 		this.row = row;
@@ -213,8 +206,16 @@ class user {
 
 	static FindUserById (id, cb) {
 		connection.query('SELECT * FROM user WHERE id = ?', [id], function(err, result) {
-			cb(error, result.map((row) => new user(row)))
+			cb(error, result.map((row) => new user(row)));
 		})
 	}
 
+	static InsertNewUser (user) {
+		var query = connection.query('INSERT INTO user SET ?', user, function(err) {
+			if (err) throw err;
+		});
+	}
+
 }
+
+module.exports = User;
