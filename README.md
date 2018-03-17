@@ -3,6 +3,10 @@ AutoSqlManagerGenerator-nodejs
 
 python 3.6
 
+A simple python script that parse a database for make two node js file :
+  - db.js : used for make a MySQL connection
+  - tableName.js : used for manage your MySQL table
+
 ## Usage :
 
   -First set the settingFile with your database access like :
