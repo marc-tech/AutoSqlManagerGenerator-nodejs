@@ -31,7 +31,7 @@ Example :
 
 ## -Script result
 
--db.js :
+-File: db.js :
 
 ```js
 const mysql = require('mysql');
@@ -46,7 +46,7 @@ var connection = mysql.createConnection({
 module.exports = connection;
 ```
 
--Messages.js :
+-File: Messages.js :
 
 ```js
 const connection = require('db');
