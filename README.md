@@ -8,7 +8,7 @@ python 3.6
   -First set the settingFile with your database access like :
 
       > cat settingFile
-      > User
+      > user
       > password
       > host
       > database
