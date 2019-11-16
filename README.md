@@ -1,7 +1,7 @@
 MySql Model Generator NodeJs
 ==
 
-This script gonna build a js class witch is a model of a MySql table
+This script will build a class js that is a model of a MySql table
 
 python 3.6
 
