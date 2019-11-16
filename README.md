@@ -1,5 +1,7 @@
-AutoSqlManagerGenerator-nodejs
+MySql Model Generator NodeJs
 ==
+
+This script gonna build a js class witch is a model of a MySql table
 
 python 3.6
 
